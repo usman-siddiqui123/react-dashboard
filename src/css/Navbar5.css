@@ -1,0 +1,54 @@
+.navbar5 {
+  position: relative;
+  height: 70px;
+  background-color: #DCCECC;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.logo-container5 {
+  flex-shrink: 0;
+}
+
+.logo-container5 img {
+  height: 50px;
+}
+
+.nav-links5 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links5 a {
+  color: #2b3c58;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.Contact-link {
+  color: #e30613 !important;
+}
+
+
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+}
+.right-section5 {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact svg {
+  font-size: 20px;
+  color: black;
+}

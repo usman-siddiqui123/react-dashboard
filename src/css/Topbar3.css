@@ -1,0 +1,48 @@
+.topbar3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: -140px;
+}
+
+
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-hello {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 140px;
+}
+
+.topbar-subtext {
+  font-size: 12px;
+  color: #888;
+  margin-left: 140px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-notification {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.topbar-user {
+  font-weight: 500;
+}
