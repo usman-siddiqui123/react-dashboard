@@ -26,7 +26,7 @@ export default function LoginPage() {
       <form className="login-card-login" onSubmit={handleSubmit}>
         <div className="login-header-login">
           <div className="left-text">Welcome to <span>Ascension</span></div>
-          <div className="right-text">No Account?</div>
+          <div className="right-text">No Account? SignUp</div>
         </div>
 
         <h2 className="login-title-login">Sign In</h2>
