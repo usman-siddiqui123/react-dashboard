@@ -42,10 +42,13 @@
   margin-left: 120px;
   margin-right: auto;
 }
+.email-holder{
+  width: 100%;
+}
 
 .login-btn {
   background-color: #023D6D;
-  color: black;
+  color: #ccc;
   padding: 12px;
   width: 100%;
   border: none;
@@ -105,6 +108,7 @@
 .signup-link {
   margin-top: 15px;
   text-align: center;
+  color: white;
 }
 
 .signup-link span {
