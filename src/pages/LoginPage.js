@@ -10,10 +10,14 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email && password) {
-      navigate("/Sign");
+
+    const storedEmail = localStorage.getItem("userEmail");
+    const storedPassword = localStorage.getItem("userPassword");
+
+    if (email === storedEmail && password === storedPassword) {
+      navigate("/Dashboard");
     } else {
-      alert("Please fill in both email and password.");
+      alert("Invalid email or password. Please sign up first.");
     }
   };
 
@@ -25,8 +29,12 @@ export default function LoginPage() {
 
       <form className="login-card-login" onSubmit={handleSubmit}>
         <div className="login-header-login">
-          <div className="left-text">Welcome to <span>Ascension</span></div>
-          <div className="right-text">No Account? SignUp</div>
+          <div className="left-text">
+            Welcome to <span>Ascension</span>
+          </div>
+          <div className="right-text" onClick={() => navigate("/Sign")}>
+            No Account? SignUp
+          </div>
         </div>
 
         <h2 className="login-title-login">Sign In</h2>
