@@ -5,7 +5,6 @@ import gift1 from "../assets/gift1.png";
 import gift2 from "../assets/gift2.png";
 import gift3 from "../assets/gift3.png";
 import Navbar3 from "../component/Navbar3";
-
 import product1 from "../assets/image1.png";
 import product2 from "../assets/image2.png";
 import product3 from "../assets/image3.png";
@@ -14,7 +13,6 @@ import product5 from "../assets/image5.png";
 import product6 from "../assets/image6.png";
 import product7 from "../assets/image7.png";
 import product8 from "../assets/image8.png";
-
 const products = [
   { id: 1, title: "Lorem ipsum dolor sit amet consectetur. Et.", image: product1, rating:"⭐ 4.0", lorem: "lorem",price: "₹200", time: "20Mins",},
   { id: 2, title: "Lorem ipsum dolor sit amet consectetur. Enim.", image: product2,rating:"⭐ 3.2", lorem: "lorem", price: "₹200", time: "20Mins",},
@@ -27,12 +25,10 @@ const products = [
 ];
 
 export default function ShopPage() {
-    
   return (
     <div className="gift-page">
         <Navbar3/>
-    <div className="gift-section">
-        
+    <div className="gift-section"> 
       <div className="gift-text">
         <h2>Lorem ipsum dolor sit amet consectetur.</h2>
         <p>
@@ -44,14 +40,11 @@ export default function ShopPage() {
       <div className="gift-images">
         <img  src={gift1} alt="gift1" />
         <img className="gifts" src={gift2} alt="gift2" />
-
         <img src={gift3} alt="gift3" />
       </div>
       </div>
-        <div className="dash-wrapper">
-            
+        <div className="dash-wrapper">            
             <div className="main3-cont">
-              
               <div className="dash-body">
                 <h2 className="dash-heading">Gift Items</h2>
                 <div className="prod-grid">
@@ -73,18 +66,16 @@ export default function ShopPage() {
                     </div>
                   ))}
                 </div>
-              </div>
-              
+              </div>              
             </div>
           </div>
-                      <footer className="custom-foot">
+          <footer className="custom-foot">
   <div className="footer-row1">
     <div className="footer-left1">
       <p className="footer-title1">
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col">
       <div className="footer-column">
         <h4>Product</h4>
@@ -118,11 +109,7 @@ export default function ShopPage() {
       </div>
     </div>
   </div>
-  
-
-
 </footer>
-  {/* Bottom bar section */}
   <div className="footer-bott">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">

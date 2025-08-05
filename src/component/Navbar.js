@@ -8,8 +8,7 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="navbar-logo" />
-        
+        <img src={logo} alt="Logo" className="navbar-logo" />        
       </div>
 <div className="nav-links">
   <Link to="/index2" className="home-link">Home</Link>
@@ -19,7 +18,6 @@ export default function Navbar() {
   <Link to="/ContactPage">Contact Us</Link>
   <Link to="/">FAQ</Link>
 </div>
-    
       <div className="right-section">
         <div className="contact"><FaCircleUser /></div>
         <p> Guardian</p>

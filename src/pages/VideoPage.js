@@ -2,7 +2,6 @@ import React from "react";
 import "../css/VideoPage.css";
 import Navbar2 from "../component/Navbar2";
 
-
 export default function VideoPage() {
   return (
     <div className="video-page">
@@ -23,7 +22,6 @@ export default function VideoPage() {
               <div className="play-button">&#9658;</div>
             </div>
           </div>
-
           <div className="main-video">
             <video controls>
               <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
@@ -33,14 +31,13 @@ export default function VideoPage() {
           </div>
         </div>
       </div>
-            <footer className="custom-foot">
+      <footer className="custom-foot">
   <div className="footer-row1">
     <div className="footer-left1">
       <p className="footer-title1">
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col">
       <div className="footer-column">
         <h4>Product</h4>
@@ -74,11 +71,7 @@ export default function VideoPage() {
       </div>
     </div>
   </div>
-  
-
-
 </footer>
-  {/* Bottom bar section */}
   <div className="footer-bott">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">
@@ -93,7 +86,6 @@ export default function VideoPage() {
       </a>
     </div>
   </div>
-      
     </div>
   );
 }

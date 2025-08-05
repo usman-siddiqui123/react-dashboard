@@ -1,15 +1,11 @@
-// src/pages/Index1.js
 import React from "react";
 import "../css/Index1.css";
 import pics1 from "../assets/pics1.png";
 import pics3 from "../assets/pics3.jpg";
 
-
 export default function Index1() {
   return (
     <div className="counseling-page">
-
-
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
@@ -23,7 +19,6 @@ export default function Index1() {
           <img src={pics1} alt="Hero" className="pics1" />
         </div>
       </section>
-
       <section className="mid-text">
         <h2 className="highlight-text">
             <span className="blue-text">What is an </span> <span className="red-text">Ascension Ceremony?</span>
@@ -32,7 +27,6 @@ export default function Index1() {
             Lorem ipsum dolor sit amet consectetur. Metus etiam augue aliquet amet mattis quam arcu et enim. Lobortis sapien pharetra at consectetur nibh pellentesque arcu massa. Urna scelerisque mauris mattis lectus at massa duis. Sit turpis arcu dignissim orci diam.
         </p>
       </section>
-
       <section className="videos">
   <div className="video-card">
     <iframe
@@ -68,7 +62,6 @@ export default function Index1() {
     ></iframe>
   </div>
 </section>
-
       <section className="side-section">
         <img src={pics3} alt="Side" className="pics3" />
         <div className="side-text">
@@ -84,7 +77,6 @@ export default function Index1() {
           <button className="side-btn">Find out more</button>
         </div>
       </section>
-
              <footer className="custom-foot">
   <div className="footer-row1">
     <div className="footer-left1">
@@ -92,7 +84,6 @@ export default function Index1() {
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col">
       <div className="footer-column">
         <h4>Product</h4>
@@ -122,15 +113,10 @@ export default function Index1() {
         <p>Privacy</p>
         <p>Cookies</p>
         <p>Contact</p>
-
       </div>
     </div>
   </div>
-  
-
-
 </footer>
-  {/* Bottom bar section */}
   <div className="footer-bott">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">
@@ -145,10 +131,6 @@ export default function Index1() {
       </a>
     </div>
   </div>
-
-
-  
-
     </div>
   );
 }

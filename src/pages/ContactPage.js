@@ -11,7 +11,6 @@ export default function ContactPage(){
                 <p className="small-title">Get Started</p>
                 <h1>Get in touch with us.</h1>
                 <h1>We're here to assist you.</h1>
-
                 <form className="contact-form">
                     <div className="form-group">
                         <input type="text" placeholder="Your Name"/>

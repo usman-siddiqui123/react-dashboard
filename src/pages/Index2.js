@@ -1,30 +1,21 @@
-// src/pages/Index2.js
 import React from "react";
 import "../css/Index2.css";
 import pics2 from "../assets/pics2.png";
 import pics3 from "../assets/pics3.jpg";
 import { useNavigate } from "react-router-dom";
 
-
-
 export default function Index2() {
-    const navigate = useNavigate();
-
+    const navigate = useNavigate()
 const handleFindOutMore = () => {
   navigate("/login");
 };
-
   return (
     <div className="counseling-page">
-
-
       <section className="hero-section">
-        <div className="hero-content">
-          
+        <div className="hero-content">          
           <img src={pics2} alt="Hero" className="pics2" />
         </div>
       </section>
-
       <section className="mid-text">
         <h2 className="highlight-text">
             <span className="blue-text">What is an </span> <span className="red-text">Ascension Ceremony?</span>
@@ -33,7 +24,6 @@ const handleFindOutMore = () => {
             Lorem ipsum dolor sit amet consectetur. Metus etiam augue aliquet amet mattis quam arcu et enim. Lobortis sapien pharetra at consectetur nibh pellentesque arcu massa. Urna scelerisque mauris mattis lectus at massa duis. Sit turpis arcu dignissim orci diam.
         </p>
       </section>
-
       <section className="videos">
   <div className="video-card">
     <iframe
@@ -69,7 +59,6 @@ const handleFindOutMore = () => {
     ></iframe>
   </div>
 </section>
-
       <section className="side-section">
         <img src={pics3} alt="Side" className="pics3" />
         <div className="side-text">
@@ -92,7 +81,6 @@ const handleFindOutMore = () => {
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col">
       <div className="footer-column">
         <h4>Product</h4>
@@ -122,15 +110,10 @@ const handleFindOutMore = () => {
         <p>Privacy</p>
         <p>Cookies</p>
         <p>Contact</p>
-
       </div>
     </div>
   </div>
-  
-
-
 </footer>
-  {/* Bottom bar section */}
   <div className="footer-bott">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">

@@ -1,4 +1,3 @@
-// src/component/Footer4.js
 import React from "react";
 import "../css/Footer5.css";
 
@@ -11,7 +10,6 @@ export default function Footer5() {
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col5">
       <div className="footer-column5">
         <h4>Product</h4>
@@ -41,15 +39,9 @@ export default function Footer5() {
         <p>Privacy</p>
         <p>Cookies</p>
         <p>Contact</p>
-
       </div>
     </div>
   </div>
-  
-
-
-
-  
   <div className="footer-bott5">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">

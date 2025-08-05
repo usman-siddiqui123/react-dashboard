@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Sidebar2.css";
-import logo from "../assets/logo1.png"; // Replace with your logo path
+import logo from "../assets/logo1.png";
 
 export default function Sidebar2() {
   return (

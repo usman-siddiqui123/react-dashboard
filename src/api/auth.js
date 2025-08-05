@@ -1,5 +1,4 @@
 const BASE_URL = "https://handyman1.pythonanywhere.com";
-
 export const signupUser = async (userData) => {
     const response = await fetch (`${BASE_URL}/user/user_auth/signup/`, {
         method : "POST",
@@ -8,11 +7,9 @@ export const signupUser = async (userData) => {
         },
         body: JSON.stringify(userData),
     });
-
     const data =await response.json();
     return{ ok : response.ok , data};
 };
-
 export const loginUser = async (loginData) => {
     const response = await fetch (`${BASE_URL}/user/user_auth/login/`, {
         method : "POST",

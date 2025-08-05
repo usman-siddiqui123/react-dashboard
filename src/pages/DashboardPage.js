@@ -1,14 +1,12 @@
-// src/pages/DashboardPage.js
+
 import React from "react";
 import "../css/DashboardPage.css";
 import Sidebar from "../component/Sidebar";
 import Topbar from "../component/Topbar";
 import { useNavigate } from "react-router-dom";
 
-
 export default function DashboardPage() {
-    const navigate = useNavigate();
-  
+    const navigate = useNavigate();  
     const handleFindOutMore = () => {
       navigate("/Dashboard1");
     };
@@ -20,7 +18,6 @@ export default function DashboardPage() {
         <div className="dashboard-body">
           <h2>Guardian Dashboard</h2>
           <button className="add-child-btn" onClick={handleFindOutMore}>Add Child Info</button>
-         
                 <section className="video-section">
   <div className="video-section">
     <iframe
@@ -56,7 +53,6 @@ export default function DashboardPage() {
     ></iframe>
   </div>
 </section>
-            
           </div>
         </div>
       </div>

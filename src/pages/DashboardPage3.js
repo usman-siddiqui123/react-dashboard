@@ -4,7 +4,6 @@ import Sidebar3 from "../component/Sidebar3";
 import Topbar3 from "../component/Topbar3";
 import Footer2 from "../component/Footer2";
 import { useNavigate } from "react-router-dom";
-
 import product1 from "../assets/image1.png";
 import product2 from "../assets/image2.png";
 import product3 from "../assets/image3.png";
@@ -26,12 +25,10 @@ const products = [
 ];
 
 export default function DashboardPage3() {
-  const navigate = useNavigate(); // 👈 Hook for navigation
-
+  const navigate = useNavigate(); 
   const handleSendClick = () => {
-    navigate("/VideoPage"); // 👈 Redirect to VideoPage
+    navigate("/VideoPage");
   };
-
   return (
     <div className="dashboard3-wrapper">
       <Sidebar3 />

@@ -1,4 +1,3 @@
-// src/pages/DashboardPage.js
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Sidebar1 from "../component/Sidebar1";
@@ -9,30 +8,25 @@ import "../css/DashboardPage1.css";
 export default function DashboardPage() {
   const [step, setStep] = useState(1);
   const navigate = useNavigate();
-
   const handleNext = (e) => {
     e.preventDefault();
-    setStep(2); // activate second circle
+    setStep(2); 
     setTimeout(() => {
-      navigate("/Dashboard2"); // 👈 your target route
-    }, 500); // delay for visual effect (optional)
+      navigate("/Dashboard2"); 
+    }, 500); 
   };
-
   return (
     <div className="dashboard-wrapper">
       <Sidebar1 />
       <div className="main-content">
         <Topbar1 />
         <div className="dashboard-body">
-          <h2 className="dashboard-heading">Guardian Dashboard</h2>
-
-          {/* Step Indicator */}    
+          <h2 className="dashboard-heading">Guardian Dashboard</h2>  
           <div className="step-indicator">
             <span className={`circle ${step >= 1 ? "active" : ""}`}>1</span>
             <span className={`line ${step >= 2 ? "active" : ""}`}></span>
             <span className={`circle ${step >= 2 ? "active" : ""}`}>2</span>
           </div>
-
           <div className="form-card">
             <h3>Add your child info</h3>
             <form onSubmit={handleNext}>

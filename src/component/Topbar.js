@@ -1,4 +1,3 @@
-// src/component/Topbar.js
 import React from "react";
 import "../css/DashboardPage.css";
 

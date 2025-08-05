@@ -1,4 +1,3 @@
-// src/component/Footer4.js
 import React from "react";
 import "../css/Footer4.css";
 
@@ -11,7 +10,6 @@ export default function Footer4() {
         Top learning experiences that create more talent in the world.
       </p>
     </div>
-
     <div className="footer-col">
       <div className="footer-column">
         <h4>Product</h4>
@@ -41,16 +39,10 @@ export default function Footer4() {
         <p>Privacy</p>
         <p>Cookies</p>
         <p>Contact</p>
-
       </div>
     </div>
   </div>
-  
-
-
-
-  
-  <div className="footer-bott">
+    <div className="footer-bott">
     <p className="copyright">© 2024 All rights reserved</p>
     <div className="social-icon">
       <a href="https://facebook.com" target="_blank" rel="noreferrer">

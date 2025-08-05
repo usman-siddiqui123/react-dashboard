@@ -3,12 +3,10 @@
   background: #f9f9f9;
   color: #ccc;
 }
-
 .hero-section {
-      margin-top: 2px; /* navbar ki height ke barabar */
+      margin-top: 2px; 
   padding: 0;
 }
-
 .hero-content {
   display: flex;
   align-items: center;
@@ -21,22 +19,19 @@
   height: 400px;
   display: block;
 }
-
 .mid-text {
   text-align: center;
   padding: 40px 20px;
   color: #696984;
 }
-
 .highlight-text {
   color: #023D6D;
   font-size: 28px;
   margin-bottom: 10px;
 }
 .blue-text {
-  color: #25327d; /* Blue */
+  color: #25327d; 
 }
-
 .red-text {
   color: #e30613;
 }
@@ -54,7 +49,6 @@
   padding: 40px 20px;
   background: #eef6fb;
 }
-
 .video-card {
   width: 250px;
   height: 150px;
@@ -64,18 +58,15 @@
   justify-content: center;
   border-radius: 8px;
 }
-
 .side-section {
   display: flex;
-  align-items: flex-start; /* aligns image and text from top */
+  align-items: flex-start; 
   gap: 40px;
   padding: 40px 20px;
   background: white;
-  flex-wrap: nowrap; /* force text to stay beside image */
+  flex-wrap: nowrap; 
   justify-content: center;
 }
-
-
 .pics3 {
   width: 500px;
   margin-left: 80px;
@@ -85,8 +76,6 @@
 .text {
   color: #e30613 !important;
 }
-
-
 .side-text h2 {
   font-size: 28px;
   color: #023D6D;
@@ -95,8 +84,6 @@
   max-width: 400px;
   color: #444;
 }
-
-
 .side-btn {
   margin-top: 20px;
   padding: 10px 20px;
@@ -106,33 +93,28 @@
   cursor: pointer;
   border-radius: 15px;
 }
-
 .custom-foot {
   background-color: #2b3c58;
   padding: 30px;
   font-family: Arial, sans-serif;
   position: relative;
 }
-
 .footer-row1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 .footer-left1 {
   flex: 1 1 40%;
   min-width: 250px;
 }
-
 .footer-title1 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   color: #eaecf0;
 }
-
 .footer-col {
   display: flex;
   gap: 60px;
@@ -140,28 +122,22 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .footer-column {
   min-width: 100px;
 }
-
 .footer-column h4 {
   margin-bottom: 8px;
   font-size: 16px;
   color: #98a2b3;
 }
-
 .footer-column p {
   margin: 20px 0;
   color: #eaecf0;
 }
-
 .footer-row1,
 .footer-col {
   margin-bottom: 20px;
 }
-
-/* NEW bottom bar styling */
 .footer-bott {
   background-color: #2b3c58;
   color: #fff;
@@ -171,7 +147,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .social-icon a {
   color: white;
   margin-right: 40px;
@@ -179,7 +154,6 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 .social-icon a:hover {
-  color: #00acee; /* Twitter blue on hover */
+  color: #00acee;
 }

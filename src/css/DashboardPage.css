@@ -1,14 +1,11 @@
-/* src/css/DashboardPage.css */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
 }
-
 .dashboard-wrapper {
   display: flex;
   height: 100vh;
 }
-
 .sidebar {
   width: 220px;
   background-color: #1c2d4a;
@@ -18,41 +15,34 @@ body {
   align-items: center;
   padding: 40px 0px;
 }
-
 .sidebar-logo {
   width: 100px;
   margin-bottom: 10px;
   margin-left: 40px; 
-  align-items: center;/* Center align the logo */
+  align-items: center;
 }
-
 .sidebar-menu {
   list-style: none;
   padding: 0 20px;
-  margin-top: -10px; /* Try 0 or even -10px to move it closer to the logo */
+  margin-top: -10px; 
   width: 100%;
 }
-
 .sidebar-menu li {
   padding: 10px 40px;
   margin-bottom: 30px;
   cursor: pointer;
   text-align: left;
 }
-
 .sidebar-menu li.active,
 .sidebar-menu li:hover {
   background-color: #2f446c;
 }
-
 .main-content {
   flex: 1;
   background-color: #fdf5e6;
   display: flex;
   flex-direction: column;
 }
-
-
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -61,54 +51,44 @@ body {
   padding: 10px 30px;
   border-bottom: 1px solid #ccc;
 }
-
 .left {
   font-weight: bold;
   font-size: 16px;
 }
-
 .greeting {
   font-size: 12px;
   color: gray;
 }
-
 .right {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-
 .notification-wrapper {
   position: relative;
 }
-
 .notification-icon {
   font-size: 20px;
   color: #333;
   cursor: pointer;
 }
-
 .icon {
   font-size: 18px;
 }
-
 .user {
   text-align: right;
   font-size: 14px;
   font-weight: 500;
 }
-
 .user small {
   display: block;
   font-size: 12px;
   color: gray;
 }
-
-
 .dashboard-body {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center; 
   justify-content: center;
   padding: 30px;
   text-align: center;
@@ -117,7 +97,6 @@ body {
 .dashboard-body h2{
   margin-right: 830px;
 }
-
 .add-child-btn {
   background-color: red;
   color: white;
@@ -127,22 +106,19 @@ body {
   border-radius: 30px;
   cursor: pointer;
   margin: 150px 0;
-  align-self: center; /* Ensure it's centered */
+  align-self: center; 
 }
-
 .divider {
-  width: 80%;              /* Limit width */
+  width: 80%;              
   border: 0.5px solid #aaa;
-  margin: 20px 0;          /* Margin around divider */
+  margin: 20px 0;         
 }
-
 .video-section {
   display: flex;
   gap: 30px;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .video-card {
   position: relative;
   width: 200px;
@@ -152,13 +128,11 @@ body {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-
 .video-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .play-icon {
   position: absolute;
   top: 50%;

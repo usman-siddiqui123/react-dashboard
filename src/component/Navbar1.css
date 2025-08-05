@@ -6,15 +6,12 @@
   align-items: center;
   padding: 0 30px;
 }
-
 .logo-container {
   flex-shrink: 0;
 }
-
 .logo-container img {
   height: 50px;
 }
-
 .nav-links {
   position: absolute;
   left: 50%;
@@ -22,7 +19,6 @@
   display: flex;
   gap: 20px;
 }
-
 .nav-links a {
   color: #2b3c58;
   text-decoration: none;
@@ -33,7 +29,6 @@
 .home-link {
   color: #e30613 !important;
 }
-
 .navbar-logo {
   height: 40px;
   width: auto;
@@ -45,7 +40,6 @@
   align-items: center;
   gap: 15px;
 }
-
 .contact svg {
   font-size: 20px;
   color: black;

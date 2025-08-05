@@ -4,39 +4,33 @@
   min-height: 100vh;
   background-color: #2b3c58;
 }
-
 .video-section {
   flex: 1;
   padding: 30px 40px;
 }
-
 .video-wrapper {
   display: flex;
   gap: 20px;
   align-items: flex-start;
 }
-
 .video-sidebar {
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 240px;
 }
-
 .video-thumbnail {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
 }
-
 .video-thumbnail video {
   width: 100%;
   height: 140px;
   object-fit: cover;
   filter: brightness(0.7);
 }
-
 .play-button {
   position: absolute;
   top: 50%;
@@ -48,24 +42,20 @@
   padding: 8px 12px;
   border-radius: 50%;
 }
-
 .main-video {
   flex: 1;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  /* background-color: #fff; */
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
-
 .main-video video {
   width: 100%;
   height: 460px;
   border-radius: 20px;
   object-fit: cover;
 }
-
 .main-play-button {
   position: absolute;
   top: 50%;
@@ -84,26 +74,22 @@
   font-family: Arial, sans-serif;
   position: relative;
 }
-
 .footer-row1 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 .footer-left1 {
   flex: 1 1 40%;
   min-width: 250px;
 }
-
 .footer-title1 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   color: #eaecf0;
 }
-
 .footer-col {
   display: flex;
   gap: 60px;
@@ -111,28 +97,22 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .footer-column {
   min-width: 100px;
 }
-
 .footer-column h4 {
   margin-bottom: 8px;
   font-size: 16px;
   color: #98a2b3;
 }
-
 .footer-column p {
   margin: 20px 0;
   color: #eaecf0;
 }
-
 .footer-row1,
 .footer-col {
   margin-bottom: 20px;
 }
-
-/* NEW bottom bar styling */
 .footer-bott {
   background-color: #2b3c58;
   color: #fff;
@@ -142,7 +122,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-
 .social-icon a {
   color: white;
   margin-right: 40px;
@@ -150,9 +129,6 @@
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
 .social-icon a:hover {
-  color: #00acee; /* Twitter blue on hover */
+  color: #00acee; 
 }
-
-

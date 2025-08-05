@@ -8,8 +8,7 @@ export default function Navbar2() {
   return (
     <nav className="navbar2">
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="navbar-logo" />
-        
+        <img src={logo} alt="Logo" className="navbar-logo" />        
       </div>
 <div className="nav-links">
   <Link to="/index2">Home</Link>
