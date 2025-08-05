@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Index1 from "./pages/Index1";
@@ -21,12 +20,6 @@ import VideoPage from "./pages/VideoPage";
 import ShopPage from "./pages/ShopPage";
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage";
-
-
-
-
-
-
 function App() {
   return (
 <Router>
@@ -59,16 +52,8 @@ function App() {
      <Route path="/ShopPage" element={<ShopPage />} />
      <Route path="/AboutPage" element={<AboutPage />} />
      <Route path="/ContactPage" element={<ContactPage/>} />
-
-
-
-
-
-
   </Routes>
 </Router>
-
   );
 }
-
 export default App;
