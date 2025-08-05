@@ -1,67 +1,66 @@
+// src/pages/LoginPage.js
 import React, { useState } from "react";
 import "../css/LoginPage.css";
 import logo1 from "../assets/logo1.png";
 import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-
-    const storedEmail = localStorage.getItem("userEmail");
-    const storedPassword = localStorage.getItem("userPassword");
-
-    if (email === storedEmail && password === storedPassword) {
+    const storedUser = JSON.parse(localStorage.getItem("user"));
+    if (
+      storedUser &&
+      storedUser.email === email &&
+      storedUser.password === password
+    ) {
       navigate("/Dashboard");
     } else {
-      alert("Invalid email or password. Please sign up first.");
+      alert("No account found. Please sign up first.");
     }
   };
 
+  const handleSignupRedirect = () => {
+    navigate("/Sign");
+  };
+
   return (
-    <div className="login-container-login">
-      <div className="logo-wrapper-login">
-        <img src={logo1} alt="Logo" className="outside-logo" />
+    <div className="login-page-container">
+      <div className="login-inner-wrapper">
+        <img src={logo1} alt="Logo" className="logo-centered" />
+        <h2 className="login-title">Sign In</h2>
+
+       <form onSubmit={handleLogin} className="login-form">
+  <label>Email:</label>
+  <input
+    type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    required
+  />
+
+  <label>Password:</label>
+  <input
+    type="password"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    required
+  />
+
+  <button type="submit" className="login-btn">Login</button>
+</form>
+
+
+        <p className="signup-link">
+          Don't have an account?{" "}
+          <span onClick={handleSignupRedirect}>Sign up</span>
+        </p>
+        
       </div>
 
-      <form className="login-card-login" onSubmit={handleSubmit}>
-        <div className="login-header-login">
-          <div className="left-text">
-            Welcome to <span>Ascension</span>
-          </div>
-          <div className="right-text" onClick={() => navigate("/Sign")}>
-            No Account? SignUp
-          </div>
-        </div>
-
-        <h2 className="login-title-login">Sign In</h2>
-
-        <label>Enter your username or email address</label>
-        <input
-          type="text"
-          placeholder="Username or Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <label>Enter your Password</label>
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-
-        <div className="login-footer-login">
-          <span className="forgot-password">Forgot password?</span>
-          <button type="submit" className="signup-btn">Sign In</button>
-        </div>
-      </form>
     </div>
   );
 }
